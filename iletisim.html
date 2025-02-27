@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feyza - Dil ve Konuşma Terapisti İletişim Sayfası">
+    <meta name="keywords" content="iletişim, dil terapisi, konuşma terapisi, Feyza">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>İletişim - Feyza </title>
+    <style>
+        header {
+            height: auto;
+        }
+        main {
+            min-height: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="img/dktlogo.png" alt="Feyza Özel Eğitim ve Rehabilitasyon Merkezi Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Ana Sayfa</a></li>
+                <li><a href="./hakkimda.html">Hakkımda</a></li>
+                <li><a href="./hizmetler.html">Hizmetler</a></li>
+                <li><a href="./merkezimiz.html">Merkezimiz</a></li>
+                <li><a href="./iletisim.html">İletişim</a></li>
+            </ul>
+            <form class="search-form">
+                <input type="search" name="searchMotor" placeholder="Arama...">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="main-aside">
+            <h3>Hızlı Erişim</h3>
+            <ul>
+                <li><a href="#iletisim-bilgileri">İletişim Bilgileri</a></li>
+                <li><a href="#iletisim-formu">İletişim Formu</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+
+        <section>
+            <article id="iletisim-bilgileri">
+                <h1>İletişim</h1>
+                <p>Bize ulaşmak için:</p>
+                <address>
+                    <p><i class="fas fa-envelope"></i> Email: info@feyzasahan.com</p>
+                    <p><i class="fas fa-phone"></i> Telefon: +90 123 456 78 90</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Adres: 123 Sokak, No: 45, Ankara</p>
+                </address>
+            </article>
+            
+            <article id="iletisim-formu">
+                <h2>İletişim Formu</h2>
+                <form id="contactForm">
+                    <p><strong>Lütfen aşağıdaki bilgileri doldurun. Zorunlu alanlar * ile işaretlenmiştir.</strong></p>
+                  
+                    <p>
+                    <label for="gender">Cinsiyet:</label>
+                    <select id="gender" name="gender">
+                      <option value="">Seçiniz</option>
+                      <option value="male">Erkek</option>
+                      <option value="female">Kadın</option>
+                      <option value="other">Belirtmek İstemiyorum</option>
+                    </select>
+                    </p>
+                  
+                    <p>
+                    <label for="name">İsim*</label>
+                    <input type="text" id="name" name="name" required>
+                    </p>
+                  
+                    <p>
+                    <label for="surname">Soyisim*</label>
+                    <input type="text" id="surname" name="surname" required>
+                    </p>
+                  
+                    <p>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    </p>
+                  
+                    <p>
+                    <label>İstek Türü:*</label>
+                    <label><input checked name="type" type="radio" value="complaint">Şikayet</label> 
+                    <label><input name="type" type="radio" value="support">Destek</label> 
+                    <label><input name="type" type="radio" value="other">Diğer</label>
+                    </p>
+                  
+                    <p>
+                    <label for="message">Mesaj*</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    </p>
+                  
+                    <p>
+                    <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Okudum, kabul ediyorum <a href="./terms-of-service.html" target="_blank">Hizmet Şartları</a> ve <a href="./privacy-policy.html" target="_blank">Gizlilik Politikası</a>
+                    </label>
+                    </p>
+                  
+                    <button type="submit">Gönder</button>
+                    <button type="reset">Temizle</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="last-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Adres: 123 Sokak, No: 45, Ankara</p>
+                <p><i class="fas fa-phone"></i> Telefon: +90 123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> E-posta: info@feyzasahan.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="hizmetler.html">Hizmetler</a></li>
+                    <li><a href="merkezimiz.html">Merkezimiz</a></li>
+                    <li><a href="sikca-sorulan-sorular.html">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="privacy-policy.html">Gizlilik Politikası</a></li>
+                    <li><a href="terms-of-service.html">Hizmet Şartları</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Bültenimize Abone Olun</h4>
+                <form>
+                    <input type="email" placeholder="E-posta adresiniz">
+                    <button type="submit">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Feyza. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
