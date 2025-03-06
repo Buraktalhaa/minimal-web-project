@@ -8,19 +8,19 @@ You can view the live website here: **[GitHub Pages Link](https://Buraktalhaa.gi
 ## 📂 Project Structure
 ```
 minimal-web-project/
-│── img/                 # Images folder
-│── index.html           # Homepage
-│── hakkimda.html        # About page
-│── hizmetler.html       # Services page
-│── iletisim.html        # Contact page
-│── merkezimiz.html      # Our Center page
+│── img/                       # Images folder
+│── index.html                 # Homepage
+│── hakkimda.html              # About page
+│── hizmetler.html             # Services page
+│── iletisim.html              # Contact page
+│── merkezimiz.html            # Our Center page
 │── sikca-sorulan-sorular.html # FAQ page
-│── privacy-policy.html  # Privacy Policy page
-│── terms-of-service.html# Terms of Service page
-│── style.css            # Main stylesheet
-│── script.js            # JavaScript file
-│── README.md            # Project documentation
-│── LICENSE              # License file
+│── privacy-policy.html        # Privacy Policy page
+│── terms-of-service.html      # Terms of Service page
+│── style.css                  # Main stylesheet
+│── script.js                  # JavaScript file
+│── README.md                  # Project documentation
+│── LICENSE                    # License file
 ```
 
 ## ✨ Features
