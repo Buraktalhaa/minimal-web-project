@@ -85,46 +85,6 @@ themeToggle.addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contactForm');
-
-    if (form) {
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(form);
-            const data = {};
-            formData.forEach((value, key) => {
-                data[key] = value;
-            });
-
-            try {
-                const response = await fetch('/send-email', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    body: new URLSearchParams(data),
-                });
-
-                const result = await response.text();
-                alert(result);
-            } catch (error) {
-                console.error('Error:', error);
-                alert('E-posta gönderilirken bir hata oluştu');
-            }
-        });
-    }
-
-    const quickLinks = document.querySelectorAll('.main-aside a[href^="#"]');
-    quickLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            document.querySelector(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
 
     const html = document.documentElement;
     themeToggle.textContent = html.getAttribute('data-theme') === 'light' ? 'Koyu Tema' : 'Açık Tema';
