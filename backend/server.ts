@@ -1,4 +1,5 @@
 import {WebSocketServer, WebSocket} from 'ws';
+import { sendValues } from "./database/helpers.ts";
 
 const ws = new WebSocketServer({port:8080});    // duzenlencek
 
@@ -19,8 +20,7 @@ ws.on("connection" ,(ws) => {
         console.log(formMessage)
 
         if(command === 'sendFormValues'){
-            // databaseye gonderme
-            
+            sendValues(gender, personName, surname, email, requestType, message);
         }
     })
 })
