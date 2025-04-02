@@ -2,9 +2,9 @@
     "name": "minimal-web-project",
     "version": "1.0.0",
     "scripts": {
-        "start": "nodemon server.js" 
-    },
-        "devDependencies": {
+        "dev": "nodemon --exec node --loader ts-node/esm server.ts"
+      },
+    "devDependencies": {
         "@types/node": "^22.13.14",
         "nodemon": "^3.1.9",
         "ts-node": "^10.9.2",
