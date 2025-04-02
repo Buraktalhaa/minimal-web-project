@@ -7,7 +7,7 @@ CREATE TABLE message(
     gender VARCHAR(50) NOT NULL,
     personName VARCHAR(50) NOT NULL,
     surname VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL
+    email VARCHAR(50) NOT NULL,
     requestType VARCHAR(50) NOT NULL,
     messageValue VARCHAR(50) NOT NULL
 );
