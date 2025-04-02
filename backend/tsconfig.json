@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
+    "target": "ES6",
     "outDir": "./dist",
-    "strict": true
-  },
-  "include": ["**/*.ts", "server.js"],
-  "exclude": ["node_modules"]
+    "rootDir": "./",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  }
 }
