@@ -1,5 +1,5 @@
 import {WebSocketServer, WebSocket} from 'ws';
-import { sendValues } from "./database/helpers.ts";
+import { sendValues } from "./database/helpers.js";
 
 const ws = new WebSocketServer({port:8080});    // duzenlencek
 
