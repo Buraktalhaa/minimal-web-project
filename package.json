@@ -1,11 +1,18 @@
 {
   "dependencies": {
+    "nodemon": "^3.1.9",
     "pg": "^8.14.1",
+    "tsc-watch": "^6.2.1",
     "ws": "^8.18.1"
+  },
+  "scripts": {
+    "dev": "npm run --prefix backend dev "
   },
   "devDependencies": {
     "@types/pg": "^8.11.11",
-    "@types/ws": "^8.18.0"
+    "@types/ws": "^8.18.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "type": "module"
 }

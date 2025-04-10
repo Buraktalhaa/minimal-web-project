@@ -2,16 +2,23 @@
     "name": "minimal-web-project",
     "version": "1.0.0",
     "scripts": {
-        "dev": "nodemon --exec node --loader ts-node/esm server.ts"
-      },
+        "start": "tsc-watch -p tsconfig.json --onSuccess \"nodemon .\""
+    },
+    "main": "dist/main",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
     "devDependencies": {
-        "@types/node": "^22.13.14",
         "nodemon": "^3.1.9",
         "ts-node": "^10.9.2",
-        "typescript": "^5.8.2"
+        "tsc-watch": "^6.2.1",
+        "typescript": "^5.8.3"
     },
     "type": "module",
     "ts-node": {
         "esm": true
+    },
+    "dependencies": {
+        "nodemailer": "^6.10.0"
     }
 }
