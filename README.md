@@ -8,19 +8,7 @@ You can view the live website here: **[GitHub Pages Link](https://Buraktalhaa.gi
 ## 📂 Project Structure
 ```
 minimal-web-project/
-│── img/                       # Images folder
-│── index.html                 # Homepage
-│── hakkimda.html              # About page
-│── hizmetler.html             # Services page
-│── iletisim.html              # Contact page
-│── merkezimiz.html            # Our Center page
-│── sikca-sorulan-sorular.html # FAQ page
-│── privacy-policy.html        # Privacy Policy page
-│── terms-of-service.html      # Terms of Service page
-│── style.css                  # Main stylesheet
-│── script.js                  # JavaScript file
-│── README.md                  # Project documentation
-│── LICENSE                    # License file
+minimal-web-project/ ├── backend/ # Node.js backend files │ ├── config/ # Configuration files │ ├── form.js # Form handler │ ├── helpers/ # Utility/helper functions │ ├── scripts/ # Email sending scripts │ ├── sendMail.js # Mail sending function │ ├── db.ts # Database connection (TypeScript) │ └── .env # Environment variables │ ├── images/ # Static image assets │ └── diklogo.png │ ├── index.html # Homepage ├── hakkinda.html # About page ├── hizmetler.html # Services page ├── iletisim.html # Contact page ├── merkezimiz.html # Our center page ├── sikca-sorulan-sorular.html # FAQ ├── privacy-policy.html # Privacy Policy ├── terms-of-service.html # Terms of Service │ ├── style.css # Main CSS stylesheet ├── script.js # Frontend JavaScript │ ├── LICENSE # License information └── README.md # Project documentation
 ```
 
 ## ✨ Features
@@ -33,9 +21,11 @@ minimal-web-project/
 
 
 ## 🛠️ Technologies Used
-- **HTML** – Structure of the website  
-- **CSS** – Styling and layout  
-- **JavaScript (Vanilla JS)** – Interactive elements and dynamic behavior 
+- **HTML5** – Page structure
+- **CSS3** – Styling and layout
+- **JavaScript (Vanilla)** – Frontend interactivity
+- **Node.js + TypeScript** – Backend form handling & database connection
+- **PostgreSQL** – Optional integration for data storage
 
 ## 📜 License
 This project is licensed under the [MIT License](LICENSE).
